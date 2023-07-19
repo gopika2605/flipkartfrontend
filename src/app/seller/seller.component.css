@@ -1,0 +1,50 @@
+
+.mat-drawer-container{
+    height: 80vh;
+}
+.mat-drawer{
+    width: 20%;
+}
+.mat-drawer-content{
+    padding: 10px;
+}
+.selling{
+    /* margin-left: 60px; */
+    padding: 8px;
+    text-decoration: none;
+    display: flex; 
+    justify-content :center;
+    align-items: center;
+    /* background-color: rgb(255, 204, 0);;
+    color: black;  */
+    /* margin-top: 40px; */
+    box-sizing: border-box;
+    height: 40px;
+    color: rgb(61, 70, 77);
+    background: rgb(255, 204, 0);
+    border-color: rgb(255, 204, 0);
+    box-shadow: rgb(193, 199, 208) 0px 0px 4px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 6px;
+
+}
+.loginbutton{
+    display: inline;
+    /* position: absolute; */
+    top: 14px;
+    right: 10px;
+    transition: right 0.3s ease 0s;
+    background: rgb(0, 102, 204);
+    width: 91px;
+    padding: 9px 12px;
+    text-align: center;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+    

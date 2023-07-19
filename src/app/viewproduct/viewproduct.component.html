@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-md">
+    <a class="navbar-brand text-white text-center"style="font-weight:600" href="#">View Product Details</a>
+  </div>
+</nav>
+
+
+
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 mt-5"><form>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"><img class="img-fluid" [src]="contact.image" alt=""></div>
+                <div class="col-4"></div>
+            </div>
+            
+          
+         
+          <div class="row mt-5 justify-content-center">
+            <div class="card p-2 d-flex justify-content-center align-items-center" style="width: 40rem;">
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bolder"><strong style="font-size: 15px;" >Title:</strong> {{contact.title}}</h5>
+                  <hr>
+                  <p class="card-text text-success"> <strong style="font-size: 15px;">Price:</strong>  ${{contact.price}}</p>
+                  <hr>
+                  <p class="card-text "><strong style="font-size: 15px;">Description:</strong> {{contact.description}}</p>
+                  <hr>
+
+                  <p class="card-text "><strong style="font-size: 15px;">Category:</strong> {{contact.category}}</p>
+                  <hr>
+                  <p class="card-text text-warning"><strong style="font-size: 15px;">Rating:</strong> {{contact.rating.rate}}</p>
+                  <!-- <p class="card-text text-secondary">Group: {{groupname}}</p> -->
+                </div>
+              </div>
+    
+        </div>
+
+
+
+
+
+
+          <!-- <div class="form-floating mb-3">
+            <input name="company" type="text" class="form-control" id="floatingInputCompany" placeholder="Company Name"required>
+            <label for="floatingInputCompany">Contact Company Name</label>
+        </div> -->
+        </div>
+        
+        
+      </form></div>
+    <div class="col-4"></div>
+</div>

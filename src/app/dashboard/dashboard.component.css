@@ -1,0 +1,31 @@
+.cardSeller{
+    background-image: url(https://static-assets-web.flixcart.com/fk-sp-static/images/welcome_potal_banner_Desktop_V2_02.svg);
+    width: 100%;
+    height: 49%;
+
+}
+.launch{
+    /* text-align: center; */
+    margin-left: 60px;
+    color: white;
+    font-size: 25px;
+}
+.phone{
+    margin-left: 60px;
+    padding: 5px;
+    margin-bottom: 15px;
+    /* text-decoration: none; */
+    /* background-color: white; */
+    /* color: #aaa3a3; */
+
+}
+.selling{
+    margin-left: 60px;
+    padding: 8px;
+    text-decoration: none; 
+    background-color: rgb(255, 204, 0);;
+    color: black; 
+    /* margin-top: 40px; */
+    box-sizing: border-box;
+
+}

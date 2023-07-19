@@ -1,0 +1,32 @@
+
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/fk-logo-pre-login-v3.svg" alt="Logo" width="130" height="45" class="d-inline-block align-text-top text-white">
+
+    </a>
+    <form class="d-flex" role="search">
+      <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button> -->
+      <a class="selling form-control me-2 " href=""> Start Selling </a>
+      <a class="loginbutton " href=""> Login  </a>
+    </form>
+  </div>
+</nav>
+
+
+
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" [opened]="true">
+    <app-sidebar>
+
+    </app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-dashboard></app-dashboard>
+    <!-- <router-outlet></router-outlet> -->
+
+  </mat-drawer-content>
+</mat-drawer-container>
+<mat-divider></mat-divider>
+

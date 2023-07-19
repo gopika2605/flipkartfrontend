@@ -1,0 +1,119 @@
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-md">
+    <a class="navbar-brand text-white text-center" style="font-weight:600" href="#">Edit Product Details</a>
+  </div>
+</nav>
+
+
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4 mt-3">
+     <form #editProductForm ="ngForm">
+        <div class="mb-3">
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"><img class="img-fluid" [src]="product.image"
+                alt=""></div>
+            <div class="col-4"></div>
+          </div>
+  
+  
+          
+            <div class="form-floating mt-3">
+              <input name="image" #image="ngModel" [(ngModel)]="product.image" type="text" class="form-control"
+                id="floatingInputimage" placeholder="Image" required>
+              <label for="floatingInputimage">Image</label>
+            </div>
+            <div *ngIf="image.invalid && image.touched" class="mb-3 text-danger">
+              Please enter valid image
+            </div>
+  
+            <div class="form-floating mt-3">
+              <input name="id" #id="ngModel" [(ngModel)]="product.id" type="text" class="form-control"
+                id="floatingInputId" placeholder="Id" required>
+              <label for="floatingInputId">Id</label>
+            </div>
+  
+            <div *ngIf="id.invalid && id.touched" class="mb-3 text-danger">
+              Please enter valid id
+  
+            </div>
+  
+           
+            <div class="form-floating mt-3">
+              <input name="title" #title="ngModel" [(ngModel)]="product.title" type="text"
+                class="form-control" id="floatingInputTitle" placeholder="Title" required>
+              <label for="floatingInputTitle">Title</label>
+            </div>
+  
+            <div *ngIf="title.invalid && title.touched" class="mb-3 text-danger">
+              Please enter valid Title
+  
+            </div>
+  
+            <div class="form-floating mt-3">
+              <input name="price" #price="ngModel" [(ngModel)]="product.price" type="text" class="form-control"
+                id="floatingInputPrice" placeholder="Price" pattern="[0-9]*" required>
+              <label for="floatingInputPrice">$Price</label>
+            </div>
+            <div *ngIf="price.invalid && price.touched" class="mb-3 text-danger">
+              Please enter valid price
+  
+            </div>
+  
+            <div class="form-floating mt-3">
+              <input name="describtion" #describtion="ngModel" [(ngModel)]="product.description" type="text"
+                class="form-control" id="floatingInputDescription" placeholder="Description" required>
+              <label for="floatingInputDescription">Description</label>
+            </div>
+  
+            <div *ngIf="describtion.invalid && describtion.touched" class="mb-3 text-danger">
+              Please enter valid describtion
+  
+            </div>
+  
+            <div class="form-floating mt-3">
+              <input name="category" #category="ngModel" [(ngModel)]="product.category" type="text" class="form-control"
+                id="floatingInputCategory" placeholder="Category" required>
+              <label for="floatingInputCategory">Category</label>
+            </div>
+  
+  
+            <div *ngIf="category.invalid && category.touched" class="mb-3 text-danger">
+              Please enter valid category
+  
+            </div>
+  
+            <div class="form-floating mt-3">
+              <input name="rating" #rating="ngModel" [(ngModel)]="product.rating!.rate" type="text" class="form-control"
+                id="floatingInputRating" placeholder="Rating" pattern="[0-9]*" required>
+              <label for="floatingInputRating">Rating</label>
+            </div>
+            <div *ngIf="rating.invalid && rating.touched" class="mb-3 text-danger">
+              Please enter valid rating
+  
+            </div>
+            <div class="form-floating mt-3">
+              <input name="count" #count="ngModel" [(ngModel)]="product.rating!.count" type="text" class="form-control"
+                id="floatingInputCount" placeholder="Count" pattern="[0-9]*" required>
+              <label for="floatingInputCount">Count</label>
+            </div>
+            <div *ngIf="count.invalid && count.touched" class="mb-3 text-danger">
+              Please enter valid count
+  
+            </div>
+          
+  
+        </div>
+  
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          
+          <button (click)="updateproduct(product.id,product)"   type="button" class="btn btn-primary btn-sm">Edit product</button>
+        </div>
+    </form> 
+
+
+
+  </div>
+  <div class="col-4"></div>
+</div>
